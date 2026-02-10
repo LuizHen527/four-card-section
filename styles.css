@@ -1,0 +1,59 @@
+
+
+:root {
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+
+    --spacing-500: 2.5rem;
+    --spacing-400: 2rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-100: .5rem;
+
+}
+
+.text-preset-1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 2.2rem;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 135%;
+    letter-spacing: 0;
+}
+
+.text-preset-4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 140%;
+    letter-spacing: 0; 
+}
+
+.text-preset-5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.813rem;
+    line-height: 160%;
+    letter-spacing: 0; 
+}
