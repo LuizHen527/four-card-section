@@ -1,4 +1,11 @@
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
 
@@ -67,6 +74,10 @@
     color: var(--grey-500);
 }
 
+.text--grey-400 {
+    color: var(--grey-400);
+}
+
 .text--center {
     text-align: center;
 }
@@ -74,4 +85,58 @@
 .container {
     width: 90%;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title-box {
+    gap: var(--spacing-200);
+    margin: 3.5rem auto;
+}
+
+.card {
+    box-shadow: 0px 15px 30px -11px rgb(131 166 210 / 50%);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 15.6rem;
+    padding: 2rem;
+    gap: 2rem;
+
+    align-items: end;
+}
+
+.card--cyan {
+    border-top: 4px solid var(--cyan);
+}
+
+.card--red {
+    border-top: 4px solid var(--red);
+}
+
+.card--yellow {
+    border-top: 4px solid var(--orange);
+}
+
+.card--blue {
+    border-top: 4px solid var(--blue);
+}
+
+.cards-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.attribution {
+    margin-top: 1.5rem;
+}
+
+.attribution a {
+    color: var(--grey-500);
+}
+
+.attribution a:hover {
+    text-decoration: none;
 }
