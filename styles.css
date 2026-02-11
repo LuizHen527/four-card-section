@@ -21,7 +21,7 @@
 .text-preset-1 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 140%;
     letter-spacing: 0.25px;
     font-style: normal;
@@ -30,7 +30,7 @@
 .text-preset-2 {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 140%;
     letter-spacing: 0.25px;
     font-style: normal;
@@ -63,6 +63,15 @@
     font-style: normal;
 }
 
-.text-grey-500 {
+.text--grey-500 {
     color: var(--grey-500);
+}
+
+.text--center {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
