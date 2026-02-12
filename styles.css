@@ -139,7 +139,7 @@
 }
 
 .attribution {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .attribution a {
@@ -184,4 +184,35 @@
         grid-column: 2 / span 2;
         grid-row: 3;
     }
+}
+
+@media (min-width: 1029px) {
+
+    .cards-box {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 23.6rem 1fr;
+        column-gap: 0;
+    }
+
+    .card--red {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .card--cyan {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+        margin-left: auto;
+    }
+
+    .card--yellow {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+    }
+
+    .card--blue {
+        grid-column: 3;
+        grid-row: 2 / span 2;
+        margin-right: auto;
+    }
+    
 }
