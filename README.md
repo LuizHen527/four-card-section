@@ -1,11 +1,10 @@
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. Status: Completed.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -13,81 +12,104 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![]()
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://luizhen527.github.io/four-card-section/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML
+- CSS
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- BEM
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The challenge was to find a way to change the order of the cards between screen sizes.
 
-To see how you can add code snippets, see below:
+![mobile screen](/assets/images/screen-cards-mobile.jpg)
+![tablet screen](/assets/images/screen-cards-tablet.jpg)
+![desktop screen](/assets/images/screen-cards-desktop.jpg)
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+I was studying Layout Grid on the Odin Project, so I decided to use it. And It got the job done.
+With Layout Grid I could change the position of the cards to different parts of the grid. I could even change the order.
+Grid its a very powerful tool.
+
+This was how I made the grid for the tablet screen size:
+
+```.cards-box {
+        display: grid;
+        grid-template: repeat(3, 250px) /  1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .card--red {
+        grid-column: 2 / span 2;
+    }
+
+    .card--cyan {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    .card--yellow {
+        grid-column: 3 / span 2;
+    }
+
+    .card--blue {
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+For the desktop, all I have to do was change the grid cell sizes and the position of the elements on it:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```.cards-box {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 23.6rem 1fr;
+        column-gap: 0;
+    }
+
+    .card--red {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .card--cyan {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+        margin-left: auto;
+    }
+
+    .card--yellow {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+    }
+
+    .card--blue {
+        grid-column: 3;
+        grid-row: 2 / span 2;
+        margin-right: auto;
+    }
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to improve:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Use of Layout Grid.
 
 ### Useful resources
 
