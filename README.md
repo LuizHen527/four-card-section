@@ -12,7 +12,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#Coded by)
+- [Author](#coded-by)
 
 ## Overview
 
@@ -22,7 +22,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://luizhen527.github.io/four-card-section/)
+- Live Site URL: [Github Pages](https://luizhen527.github.io/four-card-section/)
 
 ## My process
 
